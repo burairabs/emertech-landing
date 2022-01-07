@@ -19794,6 +19794,26 @@ button:focus {
   color: #3f78e0;
 }
 
+.btn-sky{
+  background-color: rgba(0,207,232,.12);
+  color: #00cfe8;
+  border: none !important;
+}
+
+.btn-red{
+  background-color: rgba(234,84,85,.12);
+  color: #ea5455;
+}
+
+.btn-green{
+  background-color: rgba(40,199,111,.12);
+  color: #28c76f;
+}
+.btn-orange{
+  background-color: rgba(255,159,67,.12);
+  color: #ff9f43;
+}
+
 .btn-expand.btn-soft-primary {
   color: #3f78e0;
 }
@@ -21327,9 +21347,8 @@ button.hamburger:before {
   top: 0;
   left: 0;
   width: 100%; 
-  background-color: #fff;
-  box-shadow: 0 10px 30px rgba(60, 60, 60, 0.1);
-  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
 }
 
 .card {
@@ -21482,24 +21501,8 @@ button.hamburger:before {
   color: #3f78e0;
 }
 
-.collapse-link:before {
-  font-family: Custom;
-  content: "\e903";
-  font-size: 1rem;
-  font-weight: 400;
-  width: 1rem;
-  margin-left: -0.3rem;
-  margin-right: 0.4rem;
-  display: inline-block;
-  vertical-align: -2px;
-}
-
 .collapse-link.collapsed {
   color: #343f52;
-}
-
-.collapse-link.collapsed:before {
-  content: "\e900";
 }
 
 .collapse-link:hover {
@@ -21538,16 +21541,6 @@ button.hamburger:before {
   padding-left: 0.6rem;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
-  font-family: Custom;
-  display: flex;
-  align-items: center;
-  padding-right: 0.5rem;
-  color: rgba(96, 105, 123, 0.3);
-  content: "\e902";
-  font-size: 0.35rem;
-  padding-bottom: 0.05rem;
-}
 
 .breadcrumb.text-white .breadcrumb-item:hover {
   color: #fff;
@@ -21751,6 +21744,10 @@ footer {
 
 .overflow-x{
   overflow-x: hidden;
+}
+
+.w-150{
+  width: 150px;
 }
 
 .hover-scale {
@@ -22065,14 +22062,14 @@ footer.bg-dark {
 }
 .navigation__list {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 45%;
   transform: translate(-50%, -50%);
   text-align: center;
   list-style: none;
 }
 .navigation__item {
-  margin: 1rem;
+  margin: 5px;
   counter-increment: list;
   font-family: 'Asap','sans';
 }
